@@ -1,0 +1,8 @@
+<div class="review-sites form-wrapper">
+  <%= form_for @company do |f| %>
+    <%= f.fields_for :review_sites do |site| %>
+      <%= render 'review_site_fields', f: site %>
+    <% end %>
+    <%= f.submit "Save" %>
+  <% end %>
+</div>

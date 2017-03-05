@@ -1,0 +1,30 @@
+<div id="company-dashboard-container">
+  <div class="tab-options">
+    <div class="tab active">
+      <a class="tab-links" data-tab="general-options" href="#">
+        <p class="tab-title">General Options</p>
+      </a>
+    </div>
+    <div class="tab">
+      <a class="tab-links" data-tab="styling-options" href="#">
+        <p class="tab-title">Styling Options</p>
+      </a>
+    </div>
+    <div class="tab">
+      <a class="tab-links" data-tab="review-sites" href="#">
+        <p class="tab-title">Review Sites</p>
+      </a>
+    </div>
+    <div class="tab">
+      <a class="tab-links" data-tab="email-notifications" href="#">
+        <p class="tab-title">Email Notifications</p>
+      </a>
+    </div>
+  </div><!-- remove space
+  --><div class="form-container">
+    <%= render 'general_options' %>
+    <%= render 'styling_options' %>
+    <%= render 'review_sites' %>
+    <%= render 'email_notifications' %>
+  </div>
+</div>

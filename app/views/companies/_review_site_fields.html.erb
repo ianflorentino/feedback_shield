@@ -1,0 +1,7 @@
+<div class="review-site-form">
+  <p class="review-site-title"><%= f.object.send(:name) %></p>
+  <hr />
+  <hr />
+  <%= f.text_field :url %>
+  <p class="review-site-example">eg - <%= f.object.send(:example) %></p>
+</div>

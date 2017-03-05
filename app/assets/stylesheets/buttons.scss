@@ -1,0 +1,31 @@
+/*********************
+BUTTONS
+*********************/  
+
+.button.custom, input[type="submit"]  {
+	background:#414142 ;
+	color: #ffffff !important;
+}
+.button-alt, .button, .button.small, .button.large, .button.medium, input[type="submit"], .team-member .socialbar ul li a  {
+	font-family:'Montserrat', arial;
+}
+.button.custom:hover, input[type="submit"]:hover {
+	background:#ae895d !important;
+        color: #ffffff !important;
+}
+
+.button.custom.inverse, .entry-content .more-link, #portfolio-loader #portfolio-close, .direction-nav .prev, .direction-nav .next  { background-color: #414142 !important; color: #ffffff !important; }
+.button.custom.inverse:hover, a.more-link:hover{ background: #424243 !important; color: #fff !important;}
+
+
+input, select, textarea { background: rgba(240,240,240,0.3); color:#464646;}
+
+.team-member .socialbar ul li a {
+	background:#414142 ;
+	color: #ffffff !important;
+}
+.team-member .socialbar ul li a i {
+	color: #ffffff !important;
+}
+
+

@@ -1,0 +1,98 @@
+/*********************
+PAGE LAYOUT
+*********************/  
+body {
+	background-color:#f6f6f6;	
+}
+
+/*********************
+CUSTOM ACCENT COLOR
+*********************/  
+
+.entry-title a:active, .entry-title a:hover, p.trigger.active a, .current_page_parent a, .current_page_.aside .current_page_item a, current_page_parent a, .current-menu-item a, .aside .current_page_item .page_item a:hover, .aside .current_page_item .page_item a:active, .aside a:active, .aside a:hover, .accent, a:active, a:hover, .project-title a:hover, footer[role=contentinfo] a:hover, footer[role="contentinfo"] #footer-widgets a:hover, .foundicon-email:hover, #comments span, .vertical.ui-tabs .ui-tabs-nav li.ui-tabs-active a, .feature:hover .feature-title, .feature:hover .feature-icon, a:hover, a:focus, a:visited:hover, a:visited:focus, .widget li a:hover, .article-header a:hover {color:#424243;}
+
+.toggles-container .trigger.active, .luxe_page_navi li a:hover, .luxe_page_navi li a:focus, .luxe_page_navi li.bpn-next-link a:hover, .luxe_page_navi li.bpn-prev-link a:hover, #portfolio-loader #portfolio-close:hover {background-color:#424243;}
+
+.feature:hover .feature-title:before, ul.tabs li.active, .cta  { border-color:#424243 !important; }
+
+::selection {background-color:#424243 ; color: #ffffff;}
+.latest-portfolio .overlay, .portfolio-container .overlay { background-color:rgba(66,66,67,0.8); }
+.lt-ie9 .latest-portfolio .overlay, .lt-ie9 .portfolio-container .overlay { background-color:#424243; }
+
+.entry-content .more-link:hover { background-color: #414142; color: #ffffff; }
+
+.social-icons.circle li a:hover { background-color:#424243 !important; }
+
+.sticky {border: 1px solid #424243;}
+
+
+/*********************
+ELEMENT SETTINGS
+*********************/  
+.vertical.ui-tabs .ui-tabs-nav li a, .horizontal.ui-tabs .ui-tabs-nav li a, .ui-tabs-nav li a [class ^="icon-"] {color:#6d6d6d;}
+.ui-tabs .ui-tabs-nav li.ui-tabs-active, .ui-tabs .ui-tabs-panel, .horizontal.ui-tabs .ui-tabs-nav li.ui-tabs-active a, .horizontal.ui-tabs .ui-tabs-nav li.ui-tabs-active a [class^="icon-"] {
+    color: #ffffff !important;
+}
+
+.latest-portfolio .overlay, .portfolio-container .overlay { background-color:rgba(61,61,61,0.8); }
+.standard-overlay { background-color:rgba(255,255,255,0.9); }
+
+
+/*********************
+CUSTOM PAGE SETTINGS
+*********************/  
+
+.page {
+  background-attachment: scroll;
+  background-repeat:no-repeat;
+}
+
+#content {
+        padding-bottom: 0px;
+}
+
+@media all and (max-width: 768px) {
+	.container {
+		background-attachment:scroll !important;
+	}
+	.menu-button {
+		display:block !important;
+	}
+}
+
+
+/*********************
+CUSTOM CSS
+*********************/  
+
+.nav li:hover a, .nav li:hover a:before {
+color: #ae895d !important;
+}
+
+.container {
+padding: 90px 0;
+}
+
+.nav li a {
+font-size: 13px;
+}
+
+.myFont {
+font-family: 'Open Sans', arial, serif;
+line-height: 1.1;
+margin-bottom: 14px;
+margin-top: 14px;
+font-weight: 300;
+text-transform: lowercase;
+font-style: italic;
+letter-spacing: 1px;
+}
+
+@media only screen and (min-width: 768px) {
+.nav li a {
+margin: 0px 10px;
+}
+}
+
+body.custom-background { background-color: #f6f6f6; }
+

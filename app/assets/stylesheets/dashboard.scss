@@ -1,0 +1,42 @@
+#company-dashboard-container {
+  background-color: #e6e6e6;
+  .tab-options {
+    display: inline-block;
+    vertical-align: top;
+    width: 20%;
+    margin-left: 10px;
+  }
+  .tab {
+    position: relative;
+    z-index: 10;
+    padding: 8px;
+    border-top: 2px solid #dbdddd;
+
+    &:nth-last-child(1) {
+      border-bottom: 2px solid #dbdddd;
+    }
+  }
+  .tab.active {
+    background-color: white;
+    border-left: 2px solid #dbdddd;
+    border-right: 2px solid white;
+  }
+  .tab-title {
+    margin: 0;
+  } 
+  .form-container {
+    border: 2px solid #e3e3e3;
+    display: inline-block;
+    vertical-align: top;
+    width: 78%;
+    margin-left: -2px;
+    padding: 15px;
+    background-color: white;
+  }
+  .form-wrapper {
+    display: none;
+  }
+  .form-wrapper.active {
+    display: block;
+  }
+}

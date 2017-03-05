@@ -1,0 +1,33 @@
+<div class="general-options form-wrapper active">
+  <%= form_for @company do |f| %>
+    <p class="form-label">Company Name</p>
+    <%= f.text_field :name %>
+    <p class="form-label">Domain</p>
+    <%= f.text_field :domain %>
+    <%= f.fields_for :landing_page do |l| %>
+      <p class="form-label">Site Title</p>
+      <%= l.text_field :title %>
+      <p class="form-label">Site Subtitle</p>
+      <%= l.text_field :subtitle %>
+      <p class="form-label">Logo</p>
+      <%= l.file_field :logo %>
+      <p class="form-label">Storefront Photo</p>
+      <%= l.file_field :storefront_photo %>
+    <% end %>
+    <p class="form-label">Default Review</p>
+    <%= f.select :default_review, Company::REVIEW_OPTIONS %>
+    <p class="form-label">Review Threshold</p>
+    <%= f.select :review_threshold, Company::REVIEW_OPTIONS %>
+    <%= f.fields_for :message do |m| %>
+      <p class="form-label">Message to Customer</p>
+      <%= m.cktext_area :company_message, class: 'ckeditor' %>
+      <p class="form-label">Negative Feedback Message</p>
+      <%= m.cktext_area :negative_message, class: 'ckeditor' %>
+      <p class="form-label">Postive Feedback Message</p>
+      <%= m.cktext_area :positive_message, class: 'ckeditor' %>
+    <% end %>
+    <p class="form-label">Site Language</p>
+    <%= f.select :locale, [['English', 'en'],['Spanish', 'es'],['French', 'fr']] %>
+    <%= f.submit "Save" %>
+  <% end %>
+</div>

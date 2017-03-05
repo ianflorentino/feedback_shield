@@ -1,0 +1,68 @@
+/*********************
+CUSTOM HEADER SETTINGS
+*********************/  
+
+
+.header #below-header {
+  background: #262626 url('http://www.feedbackshield.com/wp-content/uploads/2013/10/feedbackshield-logo1.png') no-repeat center center;
+}
+
+@media all and (min-width: 768px) {
+  .nav li a {
+    font-family:'Open Sans',Arial, Helvetica, sans-serif;
+    color:#464646;
+  }
+  .nav li ul.sub-menu li a, .nav li ul.sub-menu li a, .nav li ul.children li a, .nav li ul.children li a {
+    font-family:'Open Sans',Arial, Helvetica, sans-serif;
+    color:#777777;    
+  }
+  .nav li ul.children, .nav li ul.sub-menu {
+    background-color:#ffffff;  
+  }
+  nav.vertical {
+    background-color:#f6f6f6;
+  }
+  .vertical .nav li  {
+    border-bottom: 1px solid #ececec;    
+  }
+  .vertical .nav li .children li {
+    border-left: 1px solid #ececec; 
+  }
+  .nav ul.children li:hover a:before {
+    background: transparent !important;
+  }
+  .nav li:hover a:before, .nav li:hover a, nav li ul.children li a:hover, .nav ul.children li:hover a:before {
+    color: #ae895d;
+  }
+  .nav li:hover a:before {
+    border-color: #ae895d !important;
+  }
+  .nav ul.children li a:before {
+    color: #777777;
+  }
+  .horizontal .nav li, .horizontal-fixed .nav li { 
+    line-height: 80px; 
+  }
+  .horizontal #header-wrapper, .horizontal-fixed #header-wrapper {
+    background-color:#f6f6f6;
+    height:80px;
+  }
+  #container.horizontal-fixed {
+    margin-top: 80px;
+  }
+  #logo img{
+    max-height: 80px; 
+  }
+  #header-wrapper.scrolled-nav {
+    position: fixed;
+    height:60px;
+  }
+  #header-wrapper.scrolled-nav .nav li { 
+    line-height: 60px; 
+  }
+  #header-wrapper.scrolled-nav #logo img{
+    max-height: 60px; 
+  }
+}
+
+

@@ -1,0 +1,3 @@
+class EmailMessage < Message
+
+end
