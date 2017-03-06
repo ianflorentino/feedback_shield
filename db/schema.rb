@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20170226165452) do
+ActiveRecord::Schema.define(version: 20170306044225) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -100,12 +100,20 @@ ActiveRecord::Schema.define(version: 20170226165452) do
 
   create_table "messages", force: :cascade do |t|
     t.integer  "company_id"
-    t.string   "type"
     t.text     "company_message"
     t.text     "positive_message"
     t.text     "negative_message"
     t.datetime "created_at",       null: false
     t.datetime "updated_at",       null: false
+  end
+
+  create_table "notifications", force: :cascade do |t|
+    t.integer  "company_id"
+    t.string   "notification_email"
+    t.text     "positive_notification"
+    t.text     "negative_notification"
+    t.datetime "created_at",            null: false
+    t.datetime "updated_at",            null: false
   end
 
   create_table "review_companies", force: :cascade do |t|

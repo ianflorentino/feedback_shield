@@ -1,3 +1,0 @@
-class SiteMessage < Message
-
-end

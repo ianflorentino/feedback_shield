@@ -1,3 +1,0 @@
-class EmailMessage < Message
-
-end

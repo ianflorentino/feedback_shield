@@ -10,8 +10,9 @@ class Company < ApplicationRecord
   has_many :review_sites
   has_one :landing_page
   has_one :message
+  has_one :notification
 
-  accepts_nested_attributes_for :landing_page, :coupons, :reviews, :message, :review_sites
+  accepts_nested_attributes_for :landing_page, :coupons, :reviews, :message, :notification, :review_sites
 
   REVIEW_OPTIONS = %w( 1 2 3 4 5 ).freeze
 end

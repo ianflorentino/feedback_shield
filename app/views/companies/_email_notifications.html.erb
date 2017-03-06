@@ -1,11 +1,13 @@
 <div class="email-notifications form-wrapper">
   <%= form_for @company do |f| %>
-    <p class="form-label">Site Owner Email</p>
-    <%= f.text_field :email %>
-    <p class="form-label">Positive Message Email</p>
-    <%= f.text_field :email %>
-    <p class="form-label">Negative Message Email</p>
-    <%= f.text_field :email %>
+    <%= f.fields_for :notification do |n| %>
+      <p class="form-label">Site Owner Email</p>
+      <%= n.text_field :notification_email, class: 'ckeditor' %>
+      <p class="form-label">Positive Message Email</p>
+      <%= n.cktext_area :positive_notification, class: 'ckeditor' %>
+      <p class="form-label">Negative Message Email</p>
+      <%= n.cktext_area :negative_notification, class: 'ckeditor' %>
+    <% end %>
     <%= f.submit "Save" %>
   <% end %>
 </div>
