@@ -5,34 +5,24 @@ source 'https://rubygems.org'
 gem 'rails', '~> 5.0.0', '>= 5.0.0.1'
 gem 'pg', '~> 0.18'
 gem 'puma', '~> 3.0'
-gem 'sass-rails', '~> 5.0'
-gem 'uglifier', '>= 1.3.0'
 gem "paperclip", "~> 5.0.0"
 gem 'devise'
 gem 'aws-sdk'
-gem 'cocoon'
-# gem 'rails-observers'
 gem 'config'
 gem 'annotate'
+gem 'doorkeeper'
+gem 'devise-doorkeeper'
+gem 'grape'
+gem 'grape-active_model_serializers'
+gem 'msgpack'
+gem 'grape-msgpack'
+gem 'logstasher'
+gem 'wisper', '2.0.0'
 gem "paranoia", "~> 2.2"
 gem 'active_model_serializers', '~> 0.10.0'
-gem 'ckeditor'
 
-# Use CoffeeScript for .coffee assets and views
-gem 'coffee-rails', '~> 4.2'
-# See https://github.com/rails/execjs#readme for more supported runtimes gem 'therubyracer', platforms: :ruby
-
-# Use jquery as the JavaScript library
-gem 'jquery-rails'
-# Turbolinks makes navigating your web application faster. Read more: https://github.com/turbolinks/turbolinks
-gem 'turbolinks', '~> 5'
-# Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder
-gem 'jbuilder', '~> 2.5'
 # Use Redis adapter to run Action Cable in production
-# gem 'redis', '~> 3.0'
-# Use ActiveModel has_secure_password
-# gem 'bcrypt', '~> 3.1.7'
-
+gem 'redis', '~> 3.0'
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
 

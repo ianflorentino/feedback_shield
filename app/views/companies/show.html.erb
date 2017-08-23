@@ -1,0 +1,19 @@
+<div class="company-page-container">
+  <div class="company-page-header">
+    <div class="company-page-header-wrapper">
+      <%= image_tag @landing_page.logo.url(:medium) %>
+      <h1 class="company-page-title"><%= @landing_page.title %></h1>
+    </div>
+  </div>
+  <div class="company-page-body">
+    <div class="company-page-details">
+      <%= image_tag @landing_page.storefront_photo.url(:medium) %>
+      <p><%= @company.message.company_message %></p>
+    </div>
+    <div class="company-page-review-form">
+      <%= form_for @company do |c| %>
+
+      <% end %>
+    </div>
+  </div>
+</div>

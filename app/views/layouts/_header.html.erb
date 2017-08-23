@@ -14,18 +14,30 @@
     <nav role="navigation" class=" horizontal-fixed">
       <div id="mobile-nav-button"></div>
       <ul id="menu-top-nav" class="nav top-nav clearfix">
-        <li id="menu-item-1089" class="menu-item scroll-link menu-item-type-post_type scroll-link menu-item-object-page">
-          <a data-slide="home" data-parent="http://www.feedbackshield.com/" class="menu-item scroll-link menu-item-type-post_type scroll-link menu-item-object-page" href="http://www.feedbackshield.com/one-page-holder/home/">Home</a>
-        </li>
-        <li id="menu-item-1216" class="menu-item scroll-link menu-item-type-post_type scroll-link menu-item-object-page">
-          <a data-slide="concept" data-parent="http://www.feedbackshield.com/" class="menu-item scroll-link menu-item-type-post_type scroll-link menu-item-object-page" href="http://www.feedbackshield.com/one-page-holder/concept/">The Concept</a>
-        </li>
-        <li id="menu-item-1215" class="menu-item menu-item-type-custom menu-item-object-custom">
-          <a data-slide="1844-fbshield" data-parent="http://www.feedbackshield.com/" class="menu-item menu-item-type-custom menu-item-object-custom" href="tel:8443274435">1(844) FBSHIELD</a>
-        </li>
-        <li id="menu-item-1165" class="menu-item menu-item-type-custom menu-item-object-custom">
-          <a data-slide="login" data-parent="http://www.feedbackshield.com/" class="menu-item menu-item-type-custom menu-item-object-custom" href="/company-login">Login</a>
-        </li>
+        <% if !company_signed_in? %> 
+          <li id="menu-item-1089" class="menu-item scroll-link menu-item-type-post_type scroll-link menu-item-object-page">
+            <a data-slide="home" data-parent="http://www.feedbackshield.com/" class="menu-item scroll-link menu-item-type-post_type scroll-link menu-item-object-page" href="http://www.feedbackshield.com/one-page-holder/home/">Home</a>
+          </li>
+          <li id="menu-item-1216" class="menu-item scroll-link menu-item-type-post_type scroll-link menu-item-object-page">
+            <a data-slide="concept" data-parent="http://www.feedbackshield.com/" class="menu-item scroll-link menu-item-type-post_type scroll-link menu-item-object-page" href="http://www.feedbackshield.com/one-page-holder/concept/">The Concept</a>
+          </li>
+          <li id="menu-item-1215" class="menu-item menu-item-type-custom menu-item-object-custom">
+            <a data-slide="1844-fbshield" data-parent="http://www.feedbackshield.com/" class="menu-item menu-item-type-custom menu-item-object-custom" href="tel:8443274435">1(844) FBSHIELD</a>
+          </li>
+          <li id="menu-item-1165" class="menu-item menu-item-type-custom menu-item-object-custom">
+            <a data-slide="login" data-parent="http://www.feedbackshield.com/" class="menu-item menu-item-type-custom menu-item-object-custom" href="/company-login">Login</a>
+          </li>
+        <% else %>
+          <li class="menu-item menu-item-type-custom menu-item-object-custom">
+            <%= link_to 'dashboard', dashboard_company_path(current_company.id), class: "menu-item menu-item-type-custom menu-item-object-custom" %>
+          </li>
+          <li class="menu-item menu-item-type-custom menu-item-object-custom">
+            <%= link_to 'page preview', company_path(current_company.id), class: "menu-item menu-item-type-custom menu-item-object-custom" %>
+          </li>
+          <li class="menu-item menu-item-type-custom menu-item-object-custom">
+            <%= link_to 'Logout', destroy_company_session_path, :method => :delete, class: "menu-item menu-item-type-custom menu-item-object-custom" %>
+          </li>
+        <% end %>
       </ul>                                                
       <div id="header3" class="last" role="complementary">
       </div>

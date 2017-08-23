@@ -91,7 +91,7 @@
   </head>
 	<body class="home page page-id-1051 page-parent page-template page-template-page-onepage page-template-page-onepage-php custom-background">
     <div id="container" class="horizontal-fixed">
-      <%= render 'layouts/header' unless current_page?(company_path) %>
+      <%= render 'layouts/header' %>
       <%= yield %>
     </div> <!-- end #container -->
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>

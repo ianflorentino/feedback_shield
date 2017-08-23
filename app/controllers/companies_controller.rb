@@ -10,6 +10,8 @@ class CompaniesController < ApplicationController
   # GET /companies/1
   # GET /companies/1.json
   def show
+    @company = Company.find(params[:id])
+    @landing_page = @company.landing_page
   end
 
   def dashboard

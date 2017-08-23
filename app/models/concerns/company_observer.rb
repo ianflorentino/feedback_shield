@@ -6,8 +6,9 @@ module CompanyObserver
   end
 
   def create_review_sites
-    ReviewCompany.all.each do |review_company|
-      self.review_sites.create(review_company_id: review_company.id)
+    review_sites = YAML.load_file("#{Rails.root}/config/data/review_sites.yml")
+    review_sites['sites'].each do |rs|
+      self.review_sites.create(name: rs['name'])
     end
   end
 end
